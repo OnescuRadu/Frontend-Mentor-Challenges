@@ -1,1 +1,4 @@
-#Frontend Mentor Challenges
+# Frontend Mentor Challenges
+
+Completed:
+[x] Fylo Data Storage Component

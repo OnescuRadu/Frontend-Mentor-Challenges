@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* --General Styling-- */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: hsl(243, 100%, 93%);
+
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+/* --Data Storage Component Styling-- */
+.data-storage-component {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-storage-component .container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 4%;
+    justify-content: space-evenly;
+}
+
+/* --Container 1 Styling-- */
+.data-storage-component .container-1 {
+    height: 30%;
+    border-top-right-radius: 35%;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.data-storage-component .container-1 .logo,
+.data-storage-component .container-1 .icons {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.data-storage-component .container-1 .logo img {
+    width: 55%;
+    height: auto;
+}
+
+.data-storage-component .container-1 .icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.data-storage-component .container-1 .icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(229, 57%, 11%);
+    margin-right: 5%;
+    border-radius: 20%;
+    width: 20%;
+}
+
+.data-storage-component .container-1 .icons a:before {
+    /* Icon Size Ratio of 1:1*/
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+/* --Container 2 Styling-- */
+.data-storage-component .container-2 {
+    min-height: 25%;
+    text-align: center;
+    justify-content: start;
+}
+
+.data-storage-component .container-2 div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.data-storage-component .container-2 .bar {
+    background-color: #161F4A;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.data-storage-component .container-2 .progress {
+    background: rgb(255, 163, 153);
+    background: linear-gradient(90deg, rgba(255, 163, 153, 1) 0%, rgba(255, 77, 151, 1) 100%);
+    width: 75%;
+    height: 75%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.data-storage-component .container-2 .progress:after {
+    content: "";
+    background-color: #fff;
+    width: 12.5px;
+    height: 12.5px;
+    margin-right: 2px;
+    border-radius: 20px;
+}
+
+.data-storage-component .container-2 h5 {
+    font-weight: 400;
+}
+
+.data-storage-component .container-2 h5 span {
+    font-weight: 700;
+}
+
+.data-storage-component .container-2 .bar-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.data-storage-component .container-2 .bar-text h5 {
+    margin-top: 3%;
+    font-weight: 700;
+}
+
+/* --Container 3 Styling-- */
+.data-storage-component .container-3 {
+    background-color: #fff;
+    color: hsl(229, 57%, 11%);
+
+    width: 50%;
+    height: 10%;
+
+    border-radius: 0.75em;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -10%;
+
+}
+
+.data-storage-component .container-3 h5 {
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.data-storage-component .container-3 h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* --Media Query Minimum Width 992px-- */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+
+        background-image: url(./images/bg-desktop.png);
+
+        background-position: center bottom;
+        background-size: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data-storage-component {
+        width: 968px;
+        height: 200px;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .data-storage-component .container {
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .data-storage-component .container-1 {
+        height: 200px;
+        width: 350px;
+        margin-bottom: 0;
+        margin-right: 15px;
+        border-top-right-radius: 100px;
+    }
+
+    .data-storage-component .container-1 .icons a {
+        width: 50px;
+    }
+
+    .data-storage-component .container-2 {
+        height: 150px;
+        width: 540px;
+        justify-content: center;
+        text-align: left;
+        min-height: 0;
+        margin-top: auto;
+    }
+
+    .data-storage-component .container-3 {
+        width: 175px;
+        height: 75px;
+        position: absolute;
+        margin-left: 330px;
+        margin-top: -65px;
+        border-bottom-right-radius: 0;
+    }
+
+    .data-storage-component .container-3:after {
+        content: "";
+        position: absolute;
+        left: 153px;
+        top: 75px;
+        border-left: 22px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 22px solid #fff;
+        clear: both;
+    }
+}
+
+
+/* Attribution Footer */
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.attribution a {
+    color: white;
+}
