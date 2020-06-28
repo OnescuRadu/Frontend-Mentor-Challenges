@@ -117,24 +117,15 @@ body {
 
 /* --Media Query Minimum Width 1150px-- */
 @media only screen and (min-width: 1150px) {
-
-    html,
-    body {
-        height: 100%;
-    }
-
     .card-container {
-        height: 100%;
+        height: auto;
         margin: 0;
-        align-self: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
 
     .card-wrapper {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
     }
@@ -149,7 +140,7 @@ body {
         justify-content: start;
         padding: 0;
         margin: 0 auto;
-        width: 550px;
+        width: 500px;
     }
 
     .card-container .card.item-1 h2 {
