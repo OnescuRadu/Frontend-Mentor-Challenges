@@ -1,4 +1,6 @@
 # Frontend Mentor Challenges
 
-Completed:
-[x] Fylo Data Storage Component
+Completed: <br>
+[x] Fylo Data Storage Component <br>
+[x] Coding Bootcamp Testimonials Slider <br>
+[x] Four Card Feature Section <br>
